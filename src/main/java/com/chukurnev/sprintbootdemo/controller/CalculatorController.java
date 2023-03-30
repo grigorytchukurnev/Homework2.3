@@ -63,7 +63,7 @@ public class CalculatorController {
         if (num1==null || num2==null){
             return "Проверьте правильность ввернных данных num1 или num2.";}
             if (num2.equals(0)){
-                return "Делить на ноль нельзя!!!!";
+                return "Делить на ноль нельзя!";
         }
         return calculatorService.divide(num1, num2).toString();
     }
